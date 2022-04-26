@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+    shizheng:
+        container_name: 'shizheng'
+        image: 'ghcr.io/rwecho/shizheng:1650939893'
+        restart: 'always'
+        ports:
+            - '80:3000'
