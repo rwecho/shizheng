@@ -11,8 +11,7 @@ COPY yarn.lock /usr/src/app
 # Production use node instead of root
 # USER node
 
-RUN yarn add --dev typescript @types/node
-RUN yarn install --production
+RUN yarn add --dev typescript @types/node && yarn install --production
 
 COPY . /usr/src/app
 
